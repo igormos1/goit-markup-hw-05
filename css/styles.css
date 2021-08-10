@@ -291,7 +291,12 @@ body {
 .tittle:not(:last-child) {
   margin-right: 30px;
 }
-
+.portfolio-second {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 370px;
+}
 .portfolio-part {
   width: 370px;
   box-sizing: border-box;
@@ -306,9 +311,11 @@ body {
   margin-bottom: 0;
 }
 
-.portfolio-part:hover,
-.portfolio-part:focus {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+.portfolio-second:hover,
+.portfolio-second:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  /*color: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
 }
 
 .card-name .card-type {
@@ -578,6 +585,11 @@ some-pact {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
+.client-link:focus svg {
+  fill: var(--accent-color);
+  border-color: tomato;
+}
+
 .client-tittle {
   margin-bottom: 50px;
   font-family: Roboto;
@@ -591,14 +603,16 @@ some-pact {
 
 .client-icon {
   fill: #afb1b8;
-
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
 }
+.client-icon:hover,
+.client-icon:focus {
+  fill: var(--accent-color);
+}
+
+/*
 .client-icon:not(last-child) {
   margin-right: 30px;
-}
+}*/
 
 .clients {
   display: flex;
