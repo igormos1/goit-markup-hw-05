@@ -404,6 +404,7 @@ body {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
+  margin-bottom: 10px;
 }
 
 .some-text {
@@ -448,13 +449,13 @@ body {
 }
 .team-item {
   width: 270px;
-  height: 368px;
+  height: 428px;
   border: 1px solid#eeeeee;
   background-color: var(--line-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
+  /*padding-bottom: 60px;*/
 }
 .work-part {
   color: var(--primary-text-color);
@@ -646,7 +647,7 @@ body {
 .team-social-links {
   display: flex;
   list-style: none;
-  margin: 0 32px 30px 32px;
+  margin: 16px 32px 30px 32px;
   padding: 0;
   justify-content: space-between;
 }
