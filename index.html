@@ -25,7 +25,9 @@
             </a>
 
             <ul class="site-nav">
-              <li><a href="" class="stud">Студия</a></li>
+              <li class="line"><a href="" class="stud">Студия
+                
+              </a></li>
               <li>
                 <a href="./portfolio.html" class="portfolio">Портфолио</a>
               </li>
@@ -64,7 +66,10 @@
         ДЛЯ ВАШЕГО БИЗНЕСА
       </h1>
 
-      <button class="button-first">Заказать услугу</button>
+      
+      <button type="button" class="button-first" data-modal-open>Заказать услгуу</button>
+     
+      
     </section>
 
     <section >
@@ -127,13 +132,24 @@
 
         <ul class="foto-list">
           <li class="foto">
-            <img src="./images/img.jpg" alt="пример работ 1" width="370" />
+            <div class="thumb">
+                <img src="./images/img.jpg" alt="пример работ 1" width="370"  />
+          
+              <p class="overlay-text">Десктопные приложения</p>
+            </div>
           </li>
           <li class="foto">
+             <div class="thumb">
             <img src="./images/box2.jpg" alt="пример работ 2" width="370" />
+            
+              <p class="overlay-text">Десктопные приложения</p>
+          
+          </div>
           </li>
           <li class="foto">
-            <img src="./images/img1.jpg" alt="пример работ 3" width="370" />
+            <div class="thumb">  <img src="./images/img1.jpg" alt="пример работ 3" width="370"  />
+            <p class="overlay-text">Десктопные приложения</p></div>
+          
           </li>
         </ul>
       </div>
@@ -500,5 +516,15 @@
      
       </section>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-button" data-modal-close>
+          <svg class="close-icon" width=18 height=18>
+            <use href="./images/symbol-defs.svg#icon-close-1"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
